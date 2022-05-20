@@ -20,6 +20,7 @@ def build(sampler_config):
     info_path = cfg.database_info_path
     with open(info_path, 'rb') as f:
         db_infos = pickle.load(f)
+        print(db_infos)
     grot_range = list(grot_range)
     if len(grot_range) == 0:
         grot_range = None
